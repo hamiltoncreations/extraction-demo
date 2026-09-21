@@ -23,7 +23,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23152025'/%3E%3Cpath d='M8 24V8h17v4H12v4h10v4H12v4' fill='%23e5bc73'/%3E%3C/svg%3E"
     />
-    <script type="module" crossorigin src="./assets/index-nas2c9Wz.js"></script>
+    <script type="module" crossorigin src="./assets/index-EZHie3-R.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-BWXNux-o.js">
     <link rel="modulepreload" crossorigin href="./assets/observable.pure-H-M_hi7F.js">
     <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-UtxC_Odd.js">
@@ -60,10 +60,10 @@
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-DQiEAMrG.js">
     <link rel="modulepreload" crossorigin href="./assets/baseTexture.pure-DMhENBTn.js">
     <link rel="modulepreload" crossorigin href="./assets/texture.pure-uw0MsWEW.js">
-    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-Cq0wpMLi.js">
-    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-BKrGUTz7.js">
-    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-DyiR1Zvr.js">
-    <link rel="modulepreload" crossorigin href="./assets/brdfTextureTools-D-_KX0G6.js">
+    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-DwLuKl8p.js">
+    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-C4a6x7JW.js">
+    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-CCBFnEHU.js">
+    <link rel="modulepreload" crossorigin href="./assets/brdfTextureTools-BS2tXSn8.js">
     <link rel="modulepreload" crossorigin href="./assets/webAudioBaseSubGraph-D0ajKcgP.js">
     <link rel="modulepreload" crossorigin href="./assets/spatialWebAudio-CtIanz65.js">
     <link rel="modulepreload" crossorigin href="./assets/abstractSoundSource-B3SG6se2.js">
@@ -91,7 +91,7 @@
     <link rel="modulepreload" crossorigin href="./assets/bakedVertexAnimation-CP3BNGXM.js">
     <link rel="modulepreload" crossorigin href="./assets/constants-_wyaM_ID.js">
     <link rel="modulepreload" crossorigin href="./assets/cubemapToSphericalPolynomial-GLsAuq09.js">
-    <link rel="modulepreload" crossorigin href="./assets/dumpTools.pure-DDPZsRV3.js">
+    <link rel="modulepreload" crossorigin href="./assets/dumpTools.pure-DhfFeEJr.js">
     <link rel="modulepreload" crossorigin href="./assets/helperFunctions-DHdJUWHO.js">
     <link rel="modulepreload" crossorigin href="./assets/fresnelFunction-FdYlYPwE.js">
     <link rel="modulepreload" crossorigin href="./assets/meshUboDeclaration-BATNZvmb.js">
@@ -222,7 +222,7 @@
     <link rel="modulepreload" crossorigin href="./assets/mrtFragmentDeclaration-BZpfWb0R.js">
     <link rel="modulepreload" crossorigin href="./assets/boundingBoxRendererUboDeclaration-p4IHL4lf.js">
     <link rel="modulepreload" crossorigin href="./assets/iblVoxelOpacityAtomicMax-C9BLvW0W.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-D-Mbq1Ve.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-C5lFKHl4.css">
   </head>
   <body>
     <canvas id="world" aria-label="First-person training compound"></canvas>
@@ -234,6 +234,8 @@
       <button id="pause" aria-label="Pause game">Ⅱ</button>
       <div id="crosshair" class="crosshair"></div>
       <div class="bottom-note">LIVE FIRE <span>01</span></div>
+      <div id="vitality">HP 5 / 5</div>
+      <div id="down" hidden>DOWN<span>Stand by</span></div>
       <div id="desktopHelp">
         WASD move · Click or Space fire · Shift sprint · Esc pause
       </div>
@@ -256,8 +258,7 @@
         <p>A quiet compound. Room to get your bearings.</p>
         <button id="launch" disabled>Preparing ground…</button>
         <p id="instructions" class="instructions">
-          Move through the yard and warehouse.<br />Two hostiles in the lane.
-          Body shots take three hits.
+          Two hostiles in the lane return fire.<br />Body shots take three hits.
         </p>
         <div class="controls">
           <span>PHONE <b>Drag to move · Swipe to look · Hold fire</b></span
