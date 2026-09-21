@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#152025" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>Fieldwork — Training Ground</title>
+    <meta
+      name="description"
+      content="Explore a small training compound. A phone-first FPS movement prototype."
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23152025'/%3E%3Cpath d='M8 24V8h17v4H12v4h10v4H12v4' fill='%23e5bc73'/%3E%3C/svg%3E"
+    />
+    <script type="module" crossorigin src="./assets/index-sD_EtUR1.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-BWXNux-o.js">
+    <link rel="modulepreload" crossorigin href="./assets/observable.pure-H-M_hi7F.js">
+    <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-UtxC_Odd.js">
+    <link rel="modulepreload" crossorigin href="./assets/engineStore-B_7KzytD.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.vector.pure-BAJs8R8E.js">
+    <link rel="modulepreload" crossorigin href="./assets/logger-CuBYPcDK.js">
+    <link rel="modulepreload" crossorigin href="./assets/tools.functions-CGAPgMh0.js">
+    <link rel="modulepreload" crossorigin href="./assets/webRequest-dqz0dHXK.js">
+    <link rel="modulepreload" crossorigin href="./assets/precisionDate-CfCevjl-.js">
+    <link rel="modulepreload" crossorigin href="./assets/halfFloat-Ce77JD5z.js">
+    <link rel="modulepreload" crossorigin href="./assets/tools.pure-D4rv2DXk.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.color.pure-CaHjkGe9.js">
+    <link rel="modulepreload" crossorigin href="./assets/decorators-D3kDnvNy.js">
+    <link rel="modulepreload" crossorigin href="./assets/shaderStore-D-XQlhUT.js">
+    <link rel="modulepreload" crossorigin href="./assets/webAudioBaseSubGraph-D0ajKcgP.js">
+    <link rel="modulepreload" crossorigin href="./assets/abstractSoundSource-B3SG6se2.js">
+    <link rel="modulepreload" crossorigin href="./assets/meshUboDeclaration-BATNZvmb.js">
+    <link rel="modulepreload" crossorigin href="./assets/sceneUboDeclaration-B96Tfx7b.js">
+    <link rel="modulepreload" crossorigin href="./assets/sceneUboDeclaration-B5VhSG0v.js">
+    <link rel="modulepreload" crossorigin href="./assets/meshUboDeclaration-BmNu2KU_.js">
+    <link rel="modulepreload" crossorigin href="./assets/clusteredLightingFunctions-BFCOODPn.js">
+    <link rel="modulepreload" crossorigin href="./assets/clusteredLightingFunctions-DNqaoQCj.js">
+    <link rel="modulepreload" crossorigin href="./assets/ltcHelperFunctions-D8BySwCQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/ltcHelperFunctions-DS3Utz6C.js">
+    <link rel="modulepreload" crossorigin href="./assets/mainUVVaryingDeclaration-B_7d0nc3.js">
+    <link rel="modulepreload" crossorigin href="./assets/objectIdFunctions-B7azwFhh.js">
+    <link rel="modulepreload" crossorigin href="./assets/meshBlendTagFragmentOutput-DphJWeHM.js">
+    <link rel="modulepreload" crossorigin href="./assets/samplerFragmentDeclaration-CEHqUfAO.js">
+    <link rel="modulepreload" crossorigin href="./assets/mainUVVaryingDeclaration-BBamQlxR.js">
+    <link rel="modulepreload" crossorigin href="./assets/objectIdFunctions-532nR7xV.js">
+    <link rel="modulepreload" crossorigin href="./assets/samplerFragmentDeclaration-3yaLawFX.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-BrkJZXM8.css">
+  </head>
+  <body>
+    <canvas id="world" aria-label="First-person training compound"></canvas>
+    <div id="hud" hidden>
+      <div class="location">
+        <span class="tiny">FIELDWORK / FREE ROAM</span><b>Training ground</b>
+      </div>
+      <div id="heading">N · 000°</div>
+      <button id="pause" aria-label="Pause game">Ⅱ</button>
+      <div class="crosshair"></div>
+      <div class="bottom-note">MOVEMENT TRIAL <span>01</span></div>
+      <div id="desktopHelp">
+        WASD move · Shift sprint · Mouse look · Esc pause
+      </div>
+      <div id="touch">
+        <div id="look" aria-label="Swipe to look"></div>
+        <div id="stick" aria-label="Movement joystick">
+          <div id="knob"></div>
+        </div>
+        <span class="move-label">MOVE</span
+        ><span class="look-label">SWIPE TO LOOK</span
+        ><button id="sprint">SPRINT</button>
+      </div>
+    </div>
+    <div id="menu">
+      <div class="brand">F / FIELDWORK <span>PROTOTYPE 001</span></div>
+      <main>
+        <div class="eyebrow">MOVEMENT TRIAL</div>
+        <h1>Training<br />ground<span>.</span></h1>
+        <p>A quiet compound. Room to get your bearings.</p>
+        <button id="launch" disabled>Preparing ground…</button>
+        <p id="instructions" class="instructions">
+          Move through the yard and warehouse.<br />No weapons or enemies in
+          this first build.
+        </p>
+        <div class="controls">
+          <span>PHONE <b>Drag to move · Swipe to look</b></span
+          ><span>DESKTOP <b>WASD · Mouse · Shift to sprint</b></span>
+        </div>
+        <div id="error" role="alert"></div>
+      </main>
+      <footer>
+        <span>SECTOR 01 / INDUSTRIAL YARD</span><span>BEST IN LANDSCAPE</span>
+      </footer>
+    </div>
+  </body>
+</html>

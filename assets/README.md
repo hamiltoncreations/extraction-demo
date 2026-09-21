@@ -1,0 +1,1 @@
+Runtime assets belong here: GLB models, optimized textures, and audio. These files are copied unchanged to dist. The current training ground is procedural in src/levels/trainingGround.ts; no external models are required. Track asset sources and licenses when adding assets.
