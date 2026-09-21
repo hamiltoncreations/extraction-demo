@@ -23,7 +23,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23152025'/%3E%3Cpath d='M8 24V8h17v4H12v4h10v4H12v4' fill='%23e5bc73'/%3E%3C/svg%3E"
     />
-    <script type="module" crossorigin src="./assets/index-qYGBITZj.js"></script>
+    <script type="module" crossorigin src="./assets/index-Bro-rfE2.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-BWXNux-o.js">
     <link rel="modulepreload" crossorigin href="./assets/observable.pure-H-M_hi7F.js">
     <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-UtxC_Odd.js">
@@ -60,10 +60,10 @@
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-DQiEAMrG.js">
     <link rel="modulepreload" crossorigin href="./assets/baseTexture.pure-DMhENBTn.js">
     <link rel="modulepreload" crossorigin href="./assets/texture.pure-uw0MsWEW.js">
-    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-B-L4coKF.js">
-    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-D5I7cQgz.js">
-    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-Db3gZEtS.js">
-    <link rel="modulepreload" crossorigin href="./assets/brdfTextureTools-ClZULjpp.js">
+    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-D1HBsqw2.js">
+    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-B2umelVp.js">
+    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-C829PgE6.js">
+    <link rel="modulepreload" crossorigin href="./assets/brdfTextureTools-Cxqm4T01.js">
     <link rel="modulepreload" crossorigin href="./assets/webAudioBaseSubGraph-D0ajKcgP.js">
     <link rel="modulepreload" crossorigin href="./assets/spatialWebAudio-CtIanz65.js">
     <link rel="modulepreload" crossorigin href="./assets/abstractSoundSource-B3SG6se2.js">
@@ -91,7 +91,7 @@
     <link rel="modulepreload" crossorigin href="./assets/bakedVertexAnimation-CP3BNGXM.js">
     <link rel="modulepreload" crossorigin href="./assets/constants-_wyaM_ID.js">
     <link rel="modulepreload" crossorigin href="./assets/cubemapToSphericalPolynomial-GLsAuq09.js">
-    <link rel="modulepreload" crossorigin href="./assets/dumpTools.pure-BEvpIg18.js">
+    <link rel="modulepreload" crossorigin href="./assets/dumpTools.pure-5GAgkq8W.js">
     <link rel="modulepreload" crossorigin href="./assets/helperFunctions-DHdJUWHO.js">
     <link rel="modulepreload" crossorigin href="./assets/fresnelFunction-FdYlYPwE.js">
     <link rel="modulepreload" crossorigin href="./assets/meshUboDeclaration-BATNZvmb.js">
@@ -222,7 +222,7 @@
     <link rel="modulepreload" crossorigin href="./assets/mrtFragmentDeclaration-BZpfWb0R.js">
     <link rel="modulepreload" crossorigin href="./assets/boundingBoxRendererUboDeclaration-p4IHL4lf.js">
     <link rel="modulepreload" crossorigin href="./assets/iblVoxelOpacityAtomicMax-C9BLvW0W.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-BrkJZXM8.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-D-Mbq1Ve.css">
   </head>
   <body>
     <canvas id="world" aria-label="First-person training compound"></canvas>
@@ -232,10 +232,10 @@
       </div>
       <div id="heading">N · 000°</div>
       <button id="pause" aria-label="Pause game">Ⅱ</button>
-      <div class="crosshair"></div>
-      <div class="bottom-note">MOVEMENT TRIAL <span>01</span></div>
+      <div id="crosshair" class="crosshair"></div>
+      <div class="bottom-note">LIVE FIRE <span>01</span></div>
       <div id="desktopHelp">
-        WASD move · Shift sprint · Mouse look · Esc pause
+        WASD move · Click or Space fire · Shift sprint · Esc pause
       </div>
       <div id="touch">
         <div id="look" aria-label="Swipe to look"></div>
@@ -244,23 +244,24 @@
         </div>
         <span class="move-label">MOVE</span
         ><span class="look-label">SWIPE TO LOOK</span
-        ><button id="sprint">SPRINT</button>
+        ><button id="sprint">SPRINT</button
+        ><button id="fire" aria-label="Fire">FIRE</button>
       </div>
     </div>
     <div id="menu">
       <div class="brand">F / FIELDWORK <span>PROTOTYPE 001</span></div>
       <main>
-        <div class="eyebrow">MOVEMENT TRIAL</div>
+        <div class="eyebrow">LIVE FIRE</div>
         <h1>Training<br />ground<span>.</span></h1>
         <p>A quiet compound. Room to get your bearings.</p>
         <button id="launch" disabled>Preparing ground…</button>
         <p id="instructions" class="instructions">
-          Move through the yard and warehouse.<br />PMC arms · Service carbine ·
-          No combat yet.
+          Move through the yard and warehouse.<br />Service carbine · Hitscan
+          only · No damage yet.
         </p>
         <div class="controls">
-          <span>PHONE <b>Drag to move · Swipe to look</b></span
-          ><span>DESKTOP <b>WASD · Mouse · Shift to sprint</b></span>
+          <span>PHONE <b>Drag to move · Swipe to look · Hold fire</b></span
+          ><span>DESKTOP <b>WASD · Click to fire · Shift sprint</b></span>
         </div>
         <div id="error" role="alert"></div>
       </main>
