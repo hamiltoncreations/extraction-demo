@@ -23,7 +23,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23152025'/%3E%3Cpath d='M8 24V8h17v4H12v4h10v4H12v4' fill='%23e5bc73'/%3E%3C/svg%3E"
     />
-    <script type="module" crossorigin src="./assets/index-EZHie3-R.js"></script>
+    <script type="module" crossorigin src="./assets/index-gWoNHyWp.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-BWXNux-o.js">
     <link rel="modulepreload" crossorigin href="./assets/observable.pure-H-M_hi7F.js">
     <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-UtxC_Odd.js">
@@ -60,10 +60,10 @@
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-DQiEAMrG.js">
     <link rel="modulepreload" crossorigin href="./assets/baseTexture.pure-DMhENBTn.js">
     <link rel="modulepreload" crossorigin href="./assets/texture.pure-uw0MsWEW.js">
-    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-DwLuKl8p.js">
-    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-C4a6x7JW.js">
-    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-CCBFnEHU.js">
-    <link rel="modulepreload" crossorigin href="./assets/brdfTextureTools-BS2tXSn8.js">
+    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-_qWWb0Hu.js">
+    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-DgiFa87N.js">
+    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-B5Zl4vgo.js">
+    <link rel="modulepreload" crossorigin href="./assets/brdfTextureTools-Baz-lCuK.js">
     <link rel="modulepreload" crossorigin href="./assets/webAudioBaseSubGraph-D0ajKcgP.js">
     <link rel="modulepreload" crossorigin href="./assets/spatialWebAudio-CtIanz65.js">
     <link rel="modulepreload" crossorigin href="./assets/abstractSoundSource-B3SG6se2.js">
@@ -91,7 +91,7 @@
     <link rel="modulepreload" crossorigin href="./assets/bakedVertexAnimation-CP3BNGXM.js">
     <link rel="modulepreload" crossorigin href="./assets/constants-_wyaM_ID.js">
     <link rel="modulepreload" crossorigin href="./assets/cubemapToSphericalPolynomial-GLsAuq09.js">
-    <link rel="modulepreload" crossorigin href="./assets/dumpTools.pure-DhfFeEJr.js">
+    <link rel="modulepreload" crossorigin href="./assets/dumpTools.pure-CD8NZxlV.js">
     <link rel="modulepreload" crossorigin href="./assets/helperFunctions-DHdJUWHO.js">
     <link rel="modulepreload" crossorigin href="./assets/fresnelFunction-FdYlYPwE.js">
     <link rel="modulepreload" crossorigin href="./assets/meshUboDeclaration-BATNZvmb.js">
@@ -222,7 +222,7 @@
     <link rel="modulepreload" crossorigin href="./assets/mrtFragmentDeclaration-BZpfWb0R.js">
     <link rel="modulepreload" crossorigin href="./assets/boundingBoxRendererUboDeclaration-p4IHL4lf.js">
     <link rel="modulepreload" crossorigin href="./assets/iblVoxelOpacityAtomicMax-C9BLvW0W.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-C5lFKHl4.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-C2ayRkPD.css">
   </head>
   <body>
     <canvas id="world" aria-label="First-person training compound"></canvas>
@@ -237,7 +237,7 @@
       <div id="vitality">HP 5 / 5</div>
       <div id="down" hidden>DOWN<span>Stand by</span></div>
       <div id="desktopHelp">
-        WASD move · Click or Space fire · Shift sprint · Esc pause
+        WASD move · Click fire · Shift sprint · Space jump · Q/E lean · Esc pause
       </div>
       <div id="touch">
         <div id="look" aria-label="Swipe to look"></div>
@@ -247,6 +247,9 @@
         <span class="move-label">MOVE</span
         ><span class="look-label">SWIPE TO LOOK</span
         ><button id="sprint">SPRINT</button
+        ><button id="leanLeft" aria-label="Lean left">LEAN L</button
+        ><button id="leanRight" aria-label="Lean right">LEAN R</button
+        ><button id="jump" aria-label="Jump">JUMP</button
         ><button id="fire" aria-label="Fire">FIRE</button>
       </div>
     </div>
@@ -261,8 +264,8 @@
           Two hostiles in the lane return fire.<br />Body shots take three hits.
         </p>
         <div class="controls">
-          <span>PHONE <b>Drag to move · Swipe to look · Hold fire</b></span
-          ><span>DESKTOP <b>WASD · Click to fire · Shift sprint</b></span>
+          <span>PHONE <b>Drag to move · Swipe to look · Hold fire · Jump · Lean</b></span
+          ><span>DESKTOP <b>WASD · Click to fire · Shift sprint · Space jump · Q/E lean</b></span>
         </div>
         <div id="error" role="alert"></div>
       </main>
